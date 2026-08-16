@@ -1,12 +1,15 @@
 ---
+import { Image } from "astro:assets";
+
 import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
+import Logo from "../../public/cargry-logo.svg";
 ---
 
 <header>
     <nav>
         <h2>
-            <link rel="icon" type="image/svg+xml" href="/cargry-logo.svg" />
+            <Image src={Logo} />
             <a href="/">{SITE_TITLE}</a>
         </h2>
         <div class="internal-links">
