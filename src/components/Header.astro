@@ -1,13 +1,13 @@
 ---
-// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 
 import { SITE_TITLE } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
-// import Logo from "../../public/cargry-logo.svg";
+import Logo from "../../public/cargry-logo.svg";
 ---
 
 <header>
-    <!-- <Image class="logo" src={Logo} alt="Head Logo" width="32" height="32" /> -->
+    <Image src={Logo} alt="Head Logo" />
     <nav>
         <h2>
             <a href="/">{SITE_TITLE}</a>
